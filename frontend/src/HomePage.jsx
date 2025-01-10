@@ -11,7 +11,7 @@ const Homepage = () => {
   useEffect(() => {
     const fetchMovies = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/api/movies");
+        const response = await axios.get("https://popcorn-plus-backend.vercel.app/movies");
         setMovies(response.data);
       } catch (error) {
         console.error("Error fetching movies:", error);
